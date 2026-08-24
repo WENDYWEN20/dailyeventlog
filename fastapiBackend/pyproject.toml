@@ -1,0 +1,18 @@
+[project]
+name = "fastapibackend"
+version = "0.1.0"
+requires-python = ">=3.9"
+dependencies = [
+    "fastapi[standard]",
+    "sqlalchemy",
+    "asyncpg",
+    "alembic",
+    "pydantic-settings",
+    "uvicorn[standard]",
+]
+
+[dependency-groups]
+dev = [
+    "pytest",
+    "pytest-asyncio",
+]
